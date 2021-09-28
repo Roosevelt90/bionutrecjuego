@@ -1,0 +1,91 @@
+<div style="display: flex;  left: 0;  flex-direction: column;">
+  <div style="width: 100%; background-color: #1F184B; min-height: 80px; display: flex; align-items: center">
+    <div style="    margin-left: 20px;">
+      <img src="./assets/bionutrec/imagotipoBionutrec1_white.svg" style="width: 212px; height: 40px;">
+    </div>
+  </div>
+  <div style="display: flex; height: 818px; left: 0;">
+    <a href="inicio/registro">
+    <div style="background-color: #4255c5; width: 80px; height: 818px; ">
+
+    </div>
+  </a>
+    <div
+      style="width: calc(100% - 39px); height: 100%;  display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="text-align: end; padding-right: 10px;">
+          <img src="./assets/bionutrec/logoInmufort.svg" style="  width: 212px; height: 28px; margin-top: 10px;">
+        </div>
+        <div style=" text-align: center; margin-top: 20px; margin-bottom: 10px">
+          <div>
+            <span style="font-size: 48px;"><strong><span style="color:#1F184B">BIONU</span><span
+                  style="color:#FF8600">Trivia</span></strong></span>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div style="width: 60%; text-align: center;">
+            <span style="color: #1f184b; font-size: 30px; letter-spacing: 0px;">SELECCIONE EL TEMA DE LAS
+              PREGUNTAS</span>
+          </div>
+        </div>
+        <div>
+          <div style="height: 290px;">
+            <!-- Aqui va el Carusel -->
+          <ngb-carousel  #carousel  [showNavigationArrows]="true" [showNavigationIndicators]="false" style="width: 100%; height: 290px; text-align: center;" *ngIf="temas" (slide)="onSlide($event)">
+            <!-- <ng-template *ngFor="let image of temas; let i = index" ngbSlide [id]="'slideId_' + i">
+              <div style="">
+              <img width="250" src="./assets/No_image_available.svg.png" alt="Random slide">
+              <div>
+                <span style="font-size: 20px;">{{image.tema}}</span>
+              </div>
+              </div>
+            </ng-template> -->
+            <ng-template  ngbSlide [id]="'slideId_1'">
+              <div>
+              <img width="120" src="./assets/frascoInmufortKids.png" alt="Random slide">
+              <div>
+                <span style="font-size: 20px;">INMUFORT</span>
+              </div>
+              </div>
+            </ng-template>
+
+            <ng-template  ngbSlide [id]="'slideId_2'">
+              <div >
+              <img width="200" style="    padding-top: 20px;
+              " src="./assets/probioticos.png" alt="Random slide">
+              <div>
+                <span style="font-size: 20px;">PROBIÓTICOS/BONUTREC</span>
+              </div>
+              </div>
+            </ng-template>
+
+            <ng-template  ngbSlide [id]="'slideId_3'">
+              <div>
+              <img width="190" src="./assets/procilusprolardii.png" alt="Random slide">
+              <div>
+                <span style="font-size: 20px;">PROCILUS D2 y PROLARDI</span>
+              </div>
+              </div>
+            </ng-template>
+
+          </ngb-carousel>
+
+          </div>
+        </div>
+        <div style="    display: flex; justify-content: center;">
+          <div >
+            <span> <a href="#/inicio/modojuego" (click)="forward($event)" style=" color: #1f184b; font-size: 28px; letter-spacing: 0px;"> A
+                JUGAR <img src="./assets/flor1BionutrecAllo.svg" width="80"></a></span>
+          </div>
+        </div>
+      </div>
+
+      <div style=" display: flex; justify-content: flex-end;">
+        <div style="width: 70%;">
+          <img src="./assets/bionutrec/inmufortKidsDrawing02.svg" style="width: 100%;">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

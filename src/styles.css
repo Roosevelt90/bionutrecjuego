@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.cursor{
+    cursor: pointer;
+}
+
+
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+opacity: 0 !important; /*click effect color change*/
+background-color: #422873 !important;  }
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+background-color: #422873 !important; /*inner circle color change*/  }
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+border-color: #422873 !important; /*outer ring color change*/  }
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #D5D5D5 !important;
+}
+
+/* .cls_principal{
+   width: 800px;
+  height: 1200px; 
+  background-color: red;
+} */
+
+header nav {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  header nav {
+    position: fixed;
+    left: 0;
+    width: 20vw;
+  }
+}
+
+.cls_principal{
+  width: 800px !important;
+  height: 818px !important;
+}

@@ -1,0 +1,22 @@
+RewriteEngine on
+RewriteBase /
+
+# remove www and turn on https in same rule
+RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+
+# Page
+RewriteRule ^([^./]+)\.html$ index.php?module=page&slug=$1 [L,QSA,NC]
+
+# Blog
+RewriteRule ^([^./]+)\.htm$ index.php?module=blog&slug=$1 [L,QSA,NC]
+
+# Angular app
+RewriteRule ^app/$ app/dist/app/index.html [L,NC]
+
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^app/(.+)$ app/dist/app/$1 [L,NC]

@@ -1,0 +1,10 @@
+
+
+.cls{
+    text-align: center; padding-top: 2%
+}
+#containerGeneral{
+    width: 100% !important;
+    height:  950px !important;
+    background-image: url('../../../assets/bg_juego.png');
+}

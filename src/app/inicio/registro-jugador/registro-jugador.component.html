@@ -1,0 +1,63 @@
+<div style="display: flex;   left: 0;  flex-direction: column;">
+  <div style="width: 100%; background-color: #1F184B; min-height: 80px; display: flex; align-items: center">
+    <div style="    margin-left: 20px;">
+      <img src="./assets/bionutrec/imagotipoBionutrec1_white.svg" style="width: 212px; height: 40px;">
+    </div>
+  </div>
+  <div style="display: flex; height: 818px; left: 0;">
+    <a href="inicio">
+      <div style="background-color: #6971d1; width: 80px; height: 818px; ">
+
+      </div>
+    </a>
+    <div
+      style="width: calc(100% - 39px); height: 100%;  display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <div style="text-align: end; padding-right: 10px;">
+          <img src="./assets/bionutrec/logoInmufort.svg" style="  width: 212px; height: 28px; margin-top: 10px;">
+        </div>
+        <div style=" text-align: center; margin-top: 20px; margin-bottom: 10px">
+          <div>
+            <span style="font-size: 48px;"><strong><span style="color:#1F184B">BIONU</span><span
+                  style="color:#FF8600">Trivia</span></strong></span>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+          <div style="width: 35%; text-align: center;">
+            <span style="color: #1f184b; font-size: 30px; letter-spacing: 0px;">JUGADOR</span>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div style="margin-top: 20px;">
+            <img src="./assets/bionutrec/avatarPharmacist.svg" width="120" height="120">
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; margin-bottom: 20px; justify-content: center; display: flex;">
+          <div style="width: 50%;">
+            <input type="text" style="height: 50px;  background-color: #EAEAEA; border-radius: 5px;"
+              class="form-control" [(ngModel)]="jugador" placeholder="Jugador">
+          </div>
+        </div>
+        <div style="margin-bottom: 35px; justify-content: center; display: flex;">
+          <div style="width: 50%;">
+            <input type="text" style="height: 50px;  background-color: #EAEAEA; border-radius: 5px;"
+              class="form-control" [(ngModel)]="identificacion" placeholder="Identificación">
+          </div>
+        </div>
+        <div style="    display: flex; justify-content: center;">
+          <div style="">
+            <span > <a style="color: #1f184b; font-size: 28px; letter-spacing: 0px;" (click)="forward($event)"  href="#/inicio/selecpreguntas"> CONTINUAR <img src="./assets/flor1BionutrecAllo.svg" width="80"></a></span>
+            <!-- <span > <a style="color: #1f184b; font-size: 28px; letter-spacing: 0px;" (click)="forward($event)"  href="inicio/modojuego"> CONTINUAR <i class="fal fa-play"></i></a></span> -->
+          </div>
+        </div>
+      </div>
+      <div style=" display: flex; justify-content: flex-end;">
+        <div style="width: 60%;">
+          <img src="./assets/bionutrec/inmufortAdultsDrawing02.svg" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

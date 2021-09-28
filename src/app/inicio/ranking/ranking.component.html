@@ -1,0 +1,56 @@
+<div style="display: flex;   left: 0;  flex-direction: column;">
+  <div style="width: 100%; background-color: #1F184B; min-height: 80px; display: flex; align-items: center">
+    <div style="    margin-left: 20px;">
+      <img src="./assets/bionutrec/imagotipoBionutrec1_white.svg" style="width: 212px; height: 40px;">
+    </div>
+  </div>
+  <div>
+    <div style="display: flex; height: 818px; left: 0;">
+      <div style="background-color: #ff8600; width: 80px; height: 818px; ">
+
+      </div>
+      <div
+        style="width: calc(100% - 39px); height: 100%;  display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="text-align: end; padding-right: 10px;">
+            <img src="./assets/bionutrec/logoInmufort.svg" style="  width: 212px; height: 28px; margin-top: 10px;">
+          </div>
+          <div style=" text-align: center; margin-top: 20px; margin-bottom: 10px">
+            <div>
+              <span style="font-size: 48px;"><strong><span style="color:#1F184B">BIONU</span><span
+                    style="color:#FF8600">Trivia</span></strong></span>
+            </div>
+          </div>
+          <div style=" justify-content: center; display: flex; margin-bottom: 40px">
+            <div style="width: 70%; text-align: center;">
+              <p style=" color:#FF8600; font-size: 55px; margin-bottom: -10px;"><strong><u>TOP 10</u></strong></p>
+            </div>
+          </div>
+
+       <div style="display: flex; flex-direction: column;">
+            <div *ngFor="let key of dataRanking"  style="display: flex; justify-content: center;">
+              <div>
+                <span style="color: #1f184b; font-size: 34px;">{{key.nombre}}</span>
+              </div>
+              <div style="padding-right: 10px; padding-left: 10px;">
+                <span style="color: #1f184b; font-size: 34px;  ">----------------</span>                
+              </div>
+              <div>
+                <span style="color: #1f184b; font-size: 34px;">{{key.score}}</span>                
+              </div>
+            </div>
+          </div> 
+
+          
+          <!-- <h3 *ngIf="online">Se necesita conexion a internet para ver el ranking</h3> -->
+          
+        </div>
+
+        <div style="text-align: right; margin-bottom: 20px; margin-right: 20px;">
+          <a href="#/inicio" (click)="forward()" ><img src="./assets/bionutrec/home.svg" style="width: 8%;"></a>
+        </div>
+        
+      </div> 
+    </div>
+  </div>
+</div>
